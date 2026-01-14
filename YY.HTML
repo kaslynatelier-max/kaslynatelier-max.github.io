@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kaslyn | Fashion Designing Agency</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#FF6200;
+}
+
+/* Header */
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+    background:#111;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 80px;
+    z-index:10;
+}
+
+.logo{
+    color:#FF6200;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+nav a{
+    color:#FF6200;
+    text-decoration:none;
+    margin-left:40px;
+    font-weight:500;
+}
+
+/* HERO */
+.hero{
+    position:relative;
+    height:calc(100vh - 80px);
+    margin-top:80px;
+    overflow:hidden;
+    background:#000;
+}
+
+/* SINGLE HERO VIDEO – 16:9 */
+.hero video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:105%;
+    object-fit:cover;
+}
+
+
+/* About */
+.about{
+    background:#E2D1C2;
+    padding:60px 80px 120px;
+    text-align:center;
+}
+
+.about h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+    color:#555;
+}
+
+/* Services */
+.services{
+    padding:60px 80px 120px;
+    background:#FF6200;
+    text-align:center;
+}
+
+.services h2{
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.service-box{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+}
+
+.card{
+    background:#E2D1C2;
+    padding:40px 30px;
+    border-radius:18px;
+    width:100%;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 50px rgba(0,0,0,0.25);
+}
+
+.card h3{
+    font-size:22px;
+    margin-bottom:15px;
+    color:#111;
+}
+
+.card p{
+    font-size:16px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* Contact */
+.contact{
+    background:linear-gradient(120deg,#000,#333);
+    color:white;
+    padding:60px 80px 120px;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.contact .line{
+    width:70%;
+    height:1px;
+    background:rgba(255,255,255,0.3);
+    margin:25px auto;
+}
+
+.contact{
+    position: relative;
+}
+
+/* Created by bottom-right */
+.created-by{
+    position:absolute;
+    bottom:20px;
+    right:40px;
+    font-size:12px;
+    color:rgba(255,255,255,0.6);
+    text-align:right;
+    letter-spacing:1px;
+}
+
+
+.insta{
+    margin-top:15px;
+    font-size:18px;
+    color:#000;
+    background:#E2D1C2;
+    display:inline-flex;
+    align-items:center;
+    padding:6px 15px;
+    border-radius:20px;
+}
+
+.insta i{
+    margin-right:8px;
+}
+
+/* Footer */
+footer{
+    background:#000;
+    color:#aaa;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">KASLYN</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolios">Portfolio's</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO VIDEO (REPLACED) -->
+<section class="hero">
+    <video autoplay muted loop playsinline>
+        <source src="IMG_7588.MOV" type="video/mp4">
+    </video>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>ABOUT US</h2>
+    <p>
+       <b>Kaslyn</b> is a modern modeling and <b>talent agency</b> dedicated to discovering, developing, and representing exceptional talent. Founded with a vision to redefine industry standards, <b>Kaslyn</b> connects creativity, confidence, and professionalism to create lasting impact in <b>fashion</b>, <b>media</b>, and <b>advertising</b>.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+    <h2>OUR SERVICES</h2>
+
+    <div class="service-box">
+
+        <div class="card">
+            <h3>HIGH-FASHION & EDITORIAL</h3>
+            <p>Our models are available for fashion campaigns, runway shows, lookbooks, magazine editorials, and designer showcases. We work closely with brands, designers, and creative teams to deliver the right talent for every project.</p>
+        </div>
+
+        <div class="card">
+            <h3>COMMERCIAL & ADVERTISING</h3>
+    <P>We provide models for commercials, product campaigns, lifestyle shoots, e-commerce, and corporate advertising. Our talent represents a wide range of ages, looks, and markets to meet diverse brand needs.</p>
+        </div>
+
+        <div class="card">
+            <h3>INFLUENCER & BRAND COLLABOATIONS</h3>
+            <p>We connect models and digital creators with brands for influencer campaigns, social media promotions, and content creation. We manage partnerships that align with both brand identity and model image.</p>
+        </div>
+
+        <div class="card">
+            <h3>PORTFOLIO & TEST SHOOT COORDINATION</h3>
+            <p>We coordinate professional test shoots, comp cards, and portfolio updates in collaboration with experienced photographers, stylists, makeup artists, and creative directors.</p>
+        </div>
+
+        <div class="card">
+            <h3>CASTING & TALENT BOOKING</h3>
+            <p>We offer casting services for photographers, brands, production houses, and agencies. From shortlisting to final selection, we streamline the process to ensure efficient and reliable talent booking.</p>
+        </div>
+
+        <div class="card">
+            <h3>TALENT SCOUTING & DEVELOPMENT</h3>
+            <p>We discover and develop new faces with strong potential. Our development program includes portfolio building, test shoots, runway training, posing techniques, branding guidance, and industry education.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>CONTACT US</h2>
+    <div class="line"></div>
+    <p><b>Phone:</b> <a href="tel:+919059391817">+91 90593 91817</a></p>
+<p><b>Email:</b> <a href="mailto:kaslynatelier@gmail.com">kaslynatelier@gmail.com</a></p>
+    <div class="insta">
+  <a href="https://www.instagram.com/kaslyn.agency/" target="_blank">
+    <i class="fab fa-instagram"></i> kaslyn.agency
+  </a>
+</div>
+    <div class="line"></div>
+    <p><b>FOUNDER:</b> ARYAN SONA |
+       <b>CEO:</b>   MS. MADHAVI |  
+       <b>MD:</b>   MR. ANIL KUMAR</p>
+    <div class="created-by">
+    DEVEPLOED BY SAI DATTU<br>
+    kasawarsaidattu@gmail.com
+</div>
+
+</section>
+
+<footer>
+    © 2026 Kaslyn - Elite Fashion & Talent Agency                                       
+</footer>
+
+</body>
+</html>
